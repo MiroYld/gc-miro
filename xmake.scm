@@ -1,8 +1,9 @@
-(use-modules
- (guix packages)
- (guix git-download)
- (guix build-system gnu)
- ((guix licenses) #:prefix license:))
+(define-module (miro xmake)
+  #:use-module (guix)
+  #:use-module (guix build-system gnu)
+  #:use-module (guix git-download)
+  #:use-module (guix licenses)
+  #:use-module (guix packages))
 
 (define-public xmake
   (package
@@ -16,12 +17,12 @@
 	     (recursive? #t)
              (commit (string-append "v" version))))
        (file-name (git-file-name name version))
-       (sha256 "1rz7f37rps5s81mylxrn04jpd4q17dfbmz0rrdxg1wybxnpgb8il")))
+       (sha256 "1jrmi44rv0h6f2973wsdbf37wq2x74gak3s55j3bgmac02dsh0q1")))
     (arguments
-     `(#:tests? #f)) 
+     `(#:tests? #f))
     (build-system gnu-build-system)
     (home-page "https://xmake.io/")
     (synopsis "Cross-platform build utility based on Lua")
     (description "Xmake is a cross-platform build utility based on Lua.")
-    (license license:gpl3+)))
+    (license gpl3+)))
 xmake
