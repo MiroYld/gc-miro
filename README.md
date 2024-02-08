@@ -1,15 +1,4 @@
-### Miro Private channel
-
-## Add channel to your channels.scm
-
-```
- (channel
-  (name 'gc-miro)
-  (url "https://github.com/MiroYld/gc-miro.git")))
-```
-
-## Available packages
-
-```
-1) xmake
-```
+This “orphan” branch contains the keyring of the Guix-Past project:
+the OpenPGP public keys of all the Guix-Past committers ever.  It is
+used to verify signatures on Guix-Past commits.  We only ever add new
+keys here.
