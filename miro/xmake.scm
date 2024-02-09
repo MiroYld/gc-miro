@@ -13,9 +13,9 @@
      (origin
        (method git-fetch)
        (uri (git-reference
-             (url "https://github.com/xmake-io/xmake.git")
+	     (url "https://github.com/xmake-io/xmake")
 	     (recursive? #t)
-             (commit (string-append "v" version))))
+	     (commit (string-append "v" version))))
        (file-name (git-file-name name version))
        (sha256 "1rz7f37rps5s81mylxrn04jpd4q17dfbmz0rrdxg1wybxnpgb8il")))
     (arguments
@@ -24,4 +24,4 @@
     (home-page "https://xmake.io/")
     (synopsis "Cross-platform build utility based on Lua")
     (description "Xmake is a cross-platform build utility based on Lua.")
-    (license gpl3+)))
+    (license:asl2.0)))
