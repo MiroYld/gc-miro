@@ -25,4 +25,4 @@
     (home-page "https://xmake.io/")
     (synopsis "Cross-platform build utility based on Lua")
     (description "Xmake is a cross-platform build utility based on Lua.")
-    (license #f)))
+    (license gpl3)))
