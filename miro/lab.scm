@@ -36,5 +36,4 @@ Requests :: list, open, create, rebase, list pipelines... - Pipelines :: list,
 open, retry, cancel, delete, watch status... - Jobs :: list, open, retry,
 cancel, delete, show logs/traces...  lab.el also provides you `lab--request
 function which you can use to do GitLab API calls easily.")
-   (license #f))
-  )
+   (license #f)))

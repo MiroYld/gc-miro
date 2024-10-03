@@ -1,5 +1,6 @@
 (define-module (miro xmake)
   #:use-module (guix)
+  #:use-module (gnu)
   #:use-module (guix build-system gnu)
   #:use-module (guix git-download)
   #:use-module (guix licenses)
