@@ -4,6 +4,7 @@
   #:use-module (guix build-system emacs)
   #:use-module (guix git-download)
   #:use-module (guix licenses)
+  #:use-module (guix packages emacs-xyz)
   #:use-module (guix packages))
 
 (define-public kube
